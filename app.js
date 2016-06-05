@@ -128,6 +128,7 @@ var pingIPS = function(ips, callback) {
         if (index === length) {
           return callback(aIps);
         }
+        return;
       }
 
       var ping = new Ping(ip);
